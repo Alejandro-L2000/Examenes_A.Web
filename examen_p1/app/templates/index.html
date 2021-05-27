@@ -1,0 +1,27 @@
+<html>
+<head>
+    <style type="text/css">
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        *{
+            background-color: snow;
+            padding: 0%;
+            margin: 0%;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+        }
+    </style>
+    <title>Index - Comisión</title>
+</head>
+<body>
+    <form action="", method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.comision.label }}
+        {{ form.comision() }}
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
