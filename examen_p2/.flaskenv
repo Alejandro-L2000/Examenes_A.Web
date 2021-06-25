@@ -1,0 +1,2 @@
+FLASK_APP=examen2.py
+FLASK_DEBUG=1

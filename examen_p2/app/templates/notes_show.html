@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 style="text-align: center; margin-top: 1vw;">Notas de {{ current_user.username }}</h1>
+    <div class="container">
+        <div class="row" style="border-bottom: 2px; background-color: aliceblue;">
+            <div class="col" style="margin-left: 0%; padding-left: 0%;">
+                <p><strong>Título: </strong>{{ note.title }}</p><!-- Note Id -->
+            </div>
+        </div>
+        <div class="row" style="border-bottom:2px solid rgb(8, 8, 8); margin-bottom: 5px;">
+            <p><strong>Cuerpo: </strong>{{ note.body }}</p>
+        </div>
+        <p style="text-align: end;"><strong>Fecha de creación: </strong> {{ note.timestamp }} UTC</p>
+    </div>
+{% endblock %}

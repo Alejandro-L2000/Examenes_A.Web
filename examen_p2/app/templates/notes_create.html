@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <style>
+        h1,form{margin-left: 1vw;}
+        form p{margin-left: 0%;} /* Para que sea parejo */
+    </style>
+
+    <h1>Registro de Nota</h1>
+    <form action="" method="POST" novalidate>
+        <p>
+            {{ form.hidden_tag() }}
+            {{ form.title.label }}
+            {{ form.title(size=32) }}
+        </p>
+
+        <p>
+            {{ form.body.label }}
+            {{ form.body(size=32) }}
+        </p>
+        
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+{% endblock %}
